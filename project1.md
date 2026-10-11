@@ -1,48 +1,42 @@
-[Back to Portfolio](./)
+Final_STIGs
+===========
 
-Project 1 Title
-===============
+- **Class:** CSCI 301 - Survey of Programming Languages
+- **Grade:** A (course grade)
+- **Language(s):** Bash
+- **Source Code Repository:** [CSCI301-Final-STIGs](https://github.com/afrycz/CSCI301-Final-STIGs)
 
--   **Class:** 
--   **Grade:** 
--   **Language(s):** 
--   **Source Code Repository:** [features/mastering-markdown](https://guides.github.com/features/mastering-markdown/)  
-    (Please [email me](mailto:example@csustudent.net?subject=GitHub%20Access) to request access.)
+Project Description
+-------------------
 
-## Project description
+Final_STIGs is a collection of Bash scripts created to validate selected Linux security settings against DISA STIG requirements. The scripts check SSH session settings, password aging requirements, and duplicate user IDs.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The scripts display the applicable STIG requirement and the current system setting so the values can be reviewed for compliance. The duplicate UID script checks the system for accounts that share the same user ID.
 
-## How to compile and run the program
+How to Run the Program
+----------------------
 
-How to compile (if applicable) and run the project.
+No compilation is required. The scripts are run from a Linux terminal using Bash.
+
+Example:
 
 ```bash
-cd ./project
-python setup.py
+bash check_password_min_days.sh
 ```
 
-If the programming language does not require compilation, the update the heading to be “How to run the program.” If your application is deployed on a remote service, including instructions on how to deploy it.
+Some scripts may require elevated permissions to read system configuration files.
 
-## UI Design
+How It Works
+------------
 
-Almost every program requires user interaction, even command-line programs. Include in this section the tasks the user can complete and what the program does. You don't need to include how it works here; that information may go in the project description or in an additional section, depending on its significance.
+The password scripts read values from `/etc/login.defs`, while the SSH scripts read settings from `/etc/ssh/sshd_config`. The duplicate UID script uses `awk` to examine `/etc/passwd` and identify duplicate user IDs.
 
-Lorem ipsum dolor sit amet (see Fig 1), consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat (see Fig 2). Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum (see Fig 3).
+The two SSH validation scripts are included in the project, but they were not demonstrated in the screenshot because the Ubuntu VM used for testing did not have the OpenSSH server configuration file (`/etc/ssh/sshd_config`) installed. The scripts themselves are still included as part of the original project.
 
-![screenshot](images/dummy_thumbnail.jpg)  
-Fig 1. The launch screen
+The screenshot below shows the three scripts that could be demonstrated on the Ubuntu virtual machine used for testing.
 
-![screenshot](images/dummy_thumbnail.jpg)  
-Fig 2. Example output after input is processed.
+![Final_STIGs Bash scripts running on Ubuntu](images/Final_STIGS_Screenshot.png)
 
-![screenshot](images/dummy_thumbnail.jpg)  
-Fig 3. Feedback when an error occurs.
-
-## 3. Additional Considerations
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**Fig. 1. Final_STIGs scripts validating password aging settings and duplicate user IDs on Ubuntu.**
 
 [Back to Portfolio](./)
