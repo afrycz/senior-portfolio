@@ -1,19 +1,20 @@
 # Site settings
 # These are used to personalize your new site.
-title: Mary Lou Algorithm # your name here
-logo: "/images/logo.png?raw=true" # your photo (or logo) here
-description: > # your text below (remove <br /> elements if you don't need line breaks)
+title: Alana Frycz
+logo: "/images/logo.png?raw=true"
+description: >
   CSCI 496: Senior Portfolio<br />
-  In partial fulfillment of the requirements for the degree of
-  Bachelor of Science in Computer-Science (class of 2040)
+  Bachelor of Technology in Cybersecurity<br />
+  Charleston Southern University<br />
+  Expected Graduation: December 2026
   <br /><br />
-  <a href="https://example.com/resume">View My Resume</a>
+  <a href="/senior-portfolio/pdf/Alana_Frycz_Resume.pdf">View My Resume</a>
   <br /><br />
-  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a>
-repository: "csci-csu/csci-portfolio"
-github_username:  username # update with your username
-google_analytics: UA-000000-0 # your Google Analytics tracking ID here
+  <a href="https://github.com/afrycz">View My GitHub Profile</a>
+
+repository: "afrycz/senior-portfolio"
+github_username: afrycz
+google_analytics:
 
 # Build setting
 theme: jekyll-theme-minimal
-
