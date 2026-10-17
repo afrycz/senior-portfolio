@@ -19,7 +19,7 @@ Programming Projects
 Ethics Paper
 ------------
 
-### [Ethical Considerations of AI-Generated Evidence in Digital Forensics](pdf/Ethics_Paper.pdf)
+### [Ethical Considerations of AI-Generated Evidence in Digital Forensics](pdf/Ethics Paper.pdf)
 
 - **Class:** CSCI 301
 - **Grade:** A
