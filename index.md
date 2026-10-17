@@ -19,11 +19,16 @@ Programming Projects
 Ethics Paper
 ------------
 
-### [Ethical Considerations of AI-Generated Evidence in Digital Forensics](pdf/Ethics Paper.pdf)
+### [Ethical Considerations of AI-Generated Evidence in Digital Forensics](pdf/Ethics%20Paper.pdf)
 
 - **Class:** CSCI 301
 - **Grade:** A
 
 ---
+
+Reflection Essay
+----------------
+
+### [CSCI 496 Reflection Essay](reflection)
 
 <p style="font-size:11px">Page template forked from <a href="https://github.com/csu-cs/csci-portfolio">CSU-CS</a></p>
